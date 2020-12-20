@@ -1,6 +1,9 @@
 # Apache files.
 *.conf text eol=lf
 
+# Debian files.
+*.list text eol=lf
+
 # Docker files.
 Dockerfile text eol=lf
 
