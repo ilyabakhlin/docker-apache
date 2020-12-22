@@ -31,6 +31,9 @@ RUN apt-get update && apt-get -y install \
     php5.6-xdebug \
     php5.6-zip
 
+ADD --chown=root:root ./etc/php/5.6/apache2/php.ini /etc/php/5.6/apache2/php.ini
+RUN chmod 644 /etc/php/5.6/apache2/php.ini
+
 RUN curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer diagnose
 
