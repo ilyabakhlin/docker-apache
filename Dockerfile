@@ -28,6 +28,7 @@ RUN apt-get update && apt-get -y install \
     php5.6-mbstring \
     php5.6-mysql \
     php5.6-xml \
+    php5.6-xdebug \
     php5.6-zip
 
 RUN curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
