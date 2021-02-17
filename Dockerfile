@@ -34,7 +34,7 @@ RUN apt-get update && apt-get -y install \
 ADD --chown=root:root ./etc/php/5.6/apache2/php.ini /etc/php/5.6/apache2/php.ini
 RUN chmod 644 /etc/php/5.6/apache2/php.ini
 
-RUN curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN curl -s https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin
 RUN composer diagnose
 
 RUN curl -sL https://deb.nodesource.com/setup_current.x | bash -
