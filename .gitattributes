@@ -10,6 +10,3 @@ Dockerfile text eol=lf
 # Git files.
 .gitattributes text eol=lf
 .gitignore text eol=lf
-
-# PHP files.
-*.ini text eol=lf
