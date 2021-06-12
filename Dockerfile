@@ -1,9 +1,12 @@
 FROM debian:stable-slim
 
-ARG DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 ADD --chown=root:root ./etc/apt/sources.list /etc/apt/sources.list
 RUN chmod 644 /etc/apt/sources.list
+
+ADD --chown=root:root ./etc/passwd /etc/passwd
+RUN chmod 644 /etc/passwd
 
 RUN apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
 

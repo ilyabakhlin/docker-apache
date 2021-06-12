@@ -3,6 +3,7 @@
 
 # Debian files.
 *.list text eol=lf
+passwd text eol=lf
 
 # Docker files.
 Dockerfile text eol=lf
