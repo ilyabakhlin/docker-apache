@@ -12,6 +12,9 @@ RUN apt-get update && apt-get -y install apache2
 ADD --chown=root:root ./etc/apache2/apache2.conf /etc/apache2/apache2.conf
 RUN chmod 644 /etc/apache2/apache2.conf
 
+ADD --chown=root:root ./etc/apache2/conf-available/security.conf /etc/apache2/conf-available/security.conf
+RUN chmod 644 /etc/apache2/conf-available/security.conf
+
 RUN a2dissite 000-default
 
 RUN mkdir -pv /etc/apache2/sites-available/.default
