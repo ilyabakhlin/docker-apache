@@ -9,6 +9,8 @@ RUN apt-get update && apt-get -y upgrade && apt-get -y dist-upgrade
 
 RUN apt-get update && apt-get -y install apache2
 
+RUN rm -frv /var/log/apache2/*.log
+
 ADD --chown=root:root ./etc/apache2/apache2.conf /etc/apache2/apache2.conf
 RUN chmod 644 /etc/apache2/apache2.conf
 
