@@ -1,3 +1,13 @@
+# 1.1.0 #
+
+## Added ##
+
+* Replacing the `passwd` file at the `/etc/` directory, allowing the `www-data` user to initiate a session.
+
+## Changed ##
+
+* The Debian's noninteractive configuration is now an environment variable.
+
 # 1.0.0 #
 
 ## Added ##
