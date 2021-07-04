@@ -1,16 +1,16 @@
-# Apache files.
+# Apache
 *.conf text eol=lf
 
-# Debian files.
+# Debian
 *.list text eol=lf
 passwd text eol=lf
 
-# Docker files.
+# Docker
 Dockerfile text eol=lf
 
-# Git files.
+# Git
 .gitattributes text eol=lf
 .gitignore text eol=lf
 
-# Markdown files.
+# Markdown
 *.md text eol=lf
