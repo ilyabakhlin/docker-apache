@@ -2,7 +2,7 @@
 
 ## Changed ##
 
-* Changing the comments in the `sources.list` file at `/etc/apt/` directory.
+* Changing the comments in the `sources.list` file at the `/etc/apt/` directory.
 
 # 1.1.0 #
 
