@@ -1,3 +1,9 @@
+# 1.1.2 #
+
+## Changed ##
+
+* Not listing the indexes in Apache by default.
+
 # 1.1.1 #
 
 ## Changed ##
