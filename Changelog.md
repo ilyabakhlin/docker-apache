@@ -1,8 +1,14 @@
+# 1.1.2 #
+
+## Changed ##
+
+* Not listing the indexes in Apache by default.
+
 # 1.1.1 #
 
 ## Changed ##
 
-* Changing the comments in the `sources.list` file at `/etc/apt/` directory.
+* Changing the comments in the `sources.list` file at the `/etc/apt/` directory.
 
 # 1.1.0 #
 
